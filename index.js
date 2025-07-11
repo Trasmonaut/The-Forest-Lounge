@@ -13,6 +13,18 @@ window.addEventListener('scroll', () => {
 });
 
 const audio = document.getElementById('background-audio');
+const rainAudio = document.getElementById('rain-audio');
+const lightingAudio = document.getElementById('lighting-audio');
+const birdsAudio = document.getElementById('birds-audio');
+const bugsAudio = document.getElementById('bugs-audio');
+const cricketsAudio = document.getElementById('crickets-audio');
+
+const audioFiles = [audio, rainAudio, lightingAudio, birdsAudio, bugsAudio, cricketsAudio];
+// Preload audio files
+audioFiles.forEach(file => {
+  file.load();
+});
+
 const btn = document.getElementById('play-pause-btn');
 const icon = document.getElementById('play-pause-icon');
 // Set initial icon state
@@ -20,10 +32,19 @@ icon.textContent = 'volume_off'; // Default to play icon
 
 btn.addEventListener('click', () => {
   if (audio.paused) {
-    audio.play();
+   audioFiles.forEach(file => {
+      file.currentTime = 0; // Reset audio to start
+      file.play().catch(err => {
+        console.error('Error playing audio:', err);
+      });
+    });
+
     icon.textContent = 'pause';
   } else {
-    audio.pause();
+    audioFiles.forEach(file => {
+      file.pause(); // Pause all audio files
+    });
+
     icon.textContent = 'play_arrow';
   }
 });

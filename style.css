@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   background-color: #101414;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 /* Button Container */
 .button-container {
@@ -46,10 +47,10 @@ html, body {
 /* Overlay Text */
 .hero-overlay {
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%);
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
 }
 
