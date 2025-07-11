@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Forest Lounge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple parallax scrolling effect with Materialize CSS.">
+   <link rel="icon" type="image/x-icon" href="icon.ico">
+  
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <audio id="background-audio" loop>
+    <source src="bg-audio.mp3" type="audio/mpeg">
+ 
+  </audio>
+  <div class="button-container">
+    <a id ="play-pause-btn"clsass="btn-floating btn-large darken-4">  
+       <i id="play-pause-icon" class="material-icons white-text">audiotrack</i>
+    </a>
+  </a>
+  </div>
+
+  <div>
+  <!-- HERO SECTION with Parallax Effect for desktop view only -->
+    <div class="hero-parallax-container hide-on-small-only">
+      <img src="Parallax/sky.png" class="hero-layer" data-speed="-0.05">
+      <img src="Parallax/7.png" class="hero-layer" data-speed="-0.1">
+      <img src="Parallax/6.png" class="hero-layer" data-speed="-0.2">
+      <img src="Parallax/5.png" class="hero-layer" data-speed="-0.3">
+      <img src="Parallax/4.png" class="hero-layer" data-speed="-0.4">
+      <img src="Parallax/3.png" class="hero-layer" data-speed="-0.5">
+      <img src="Parallax/2.png" class="hero-layer" data-speed="-0.6">
+      <img src="Parallax/1.png" class="hero-layer" data-speed="-0.7" style="height: -150px; z-index: 10;">
+
+      <!-- Text-Overlay -->
+      <div class="hero-overlay center-align hide-on-small-only">
+        <h1 class="white-text">Welcome to My World</h1>
+        <p class="grey-text text-lighten-3">Scroll down to explore</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Mobile view -->
+   <div class="section no-pad-top center hide-on-med-and-up" style="margin: 0; padding: 0;">
+      <img src="Parallax/regular.png" class="mobile-hero responsive-img">
+
+      <h4 class="white-text">Welcome to My World</h4>
+      <p class="grey-text text-lighten-3">Scroll down to explore</p>
+    </div>
+
+ 
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    
+    <div class="section container">
+      <h3 class="white-text">Regular Section 1</h3>
+      <p class="grey-text text-lighten-2">This section scrolls normally, no parallax effects here.</p>
+    </div>
+
+    <div class="section container">
+      <h4 class="white-text">Section 2</h4>
+      <p class="grey-text text-lighten-1">You can add Materialize cards, modals, navs, etc. here.</p>
+    </div>
+
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

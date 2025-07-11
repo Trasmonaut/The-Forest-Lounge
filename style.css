@@ -1,0 +1,84 @@
+html, body {
+  margin: 0;
+  height: auto;
+  padding: 0;
+  background-color: #101414;
+  overflow-x: hidden;
+}
+/* Button Container */
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+}
+/* Floating Action Button */
+.btn-floating {
+  color: #ffffff; /* White icon */
+  transition: transform 0.3s ease;
+  background-image: url('bg-audio.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Hero Parallax Container */
+.hero-parallax-container {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-layer {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+
+/* Overlay Text */
+.hero-overlay {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Spacer to push content down */
+.hero-spacer {
+  position: absolute;
+  top: 100vh; /* Matches the height of the parallax container */
+  width: 100%;
+  left: 0;
+  height: 100vh;
+}
+
+.mobile-hero {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+/* Main content */
+.main-content {
+  position: relative;
+  z-index: 10;
+}
+
+.section {
+  padding: 5rem 2rem;
+}
