@@ -4,7 +4,7 @@ window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
 
   // Only apply scroll to first viewport
-  if (scrollY < 0.75*window.innerHeight) {
+  if (scrollY < 1*window.innerHeight) {
     heroLayers.forEach(layer => {
       const speed = parseFloat(layer.dataset.speed);
       layer.style.transform = `translateY(${scrollY * speed}px)`;
@@ -51,3 +51,10 @@ btn.addEventListener('click', () => {
 // Update icon based on audio state
 audio.addEventListener('play', () => { icon.textContent = 'audiotrack'; });
 audio.addEventListener('pause', () => { icon.textContent = 'volume_off'; });
+
+
+const watchTrailerButton = document.getElementById('watch-trailer-button');
+watchTrailerButton.addEventListener('click', () => {
+  // Open the trailer in a new tab
+  window.open('https://www.youtube.com/watch?v=F_WpA-jivlI&list=PLLvVQTtcJYcgiK-NKHmiTpBmY0Bi1OeS3&index=7', '_blank');
+});

@@ -5,11 +5,12 @@
   <title>The Forest Lounge</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A simple parallax scrolling effect with Materialize CSS.">
-   <link rel="icon" type="image/x-icon" href="images/icon.ico">
+  <link rel="icon" type="image/x-icon" href="images/icon.ico">
   
   <!-- Materialize CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Spicy+Rice' rel='stylesheet'>
 
 
   <link rel="stylesheet" href="style.css">
@@ -37,12 +38,32 @@
 
 
   <div class="button-container">
-    <a id ="play-pause-btn"clsass="btn-floating btn-large darken-4">  
+    <a id ="play-pause-btn">
        <i id="play-pause-icon" class="material-icons white-text">audiotrack</i>
-    </a>
+        
   </a>
   </div>
 
+  <!--Nav Section-->
+  <div  class="navbar-fixed ">
+    <nav class="nav-center">
+
+    <div class="nav-wrapper ">
+      
+      <ul id="nav-mobile" class="center hide-on-small-only ">
+       <li class="nav-links"> About Us</li>
+       <li class="nav-links">Contact</li>
+       <li class="nav-links">Gallery</li>
+       <li class="nav-links">FAQ</li>
+       <li class="nav-links" style="border-radius: 15px; border: 2px solid white;">Wishlist </li>
+       <li class="nav-links logo-image"><a href="#">
+        <img src="images/logo.png" alt="Logo" class="logo-image">
+       </a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
   <div>
   <!-- HERO SECTION with Parallax Effect for desktop view only -->
     <div class="hero-parallax-container hide-on-small-only">
@@ -57,8 +78,12 @@
 
       <!-- Text-Overlay -->
       <div class="hero-overlay center-align hide-on-small-only">
-        <h1 class="white-text">Welcome to My World</h1>
-        <p class="grey-text text-lighten-3">Scroll down to explore</p>
+        <h1 class="main-logo">The Forest Lounge</h1>
+        <p class = "subtitle">Step into a living forest where every leaf whispers a story. Discover ancient secrets, forge bonds with magical creatures, and shape your path through a world designed for peace and wonder.</p>
+        <div class="button-group">
+         <button class="button watch-trailer-button" id="watch-trailer-button"> Watch Trailer</button>
+         <button class ="button wishlist-button">Wishlist</button>
+        </div>
       </div>
     </div>
   </div>
@@ -69,16 +94,15 @@
       <img src="images/Parallax/regular.png" class="mobile-hero responsive-img">
 
       <h4 class="white-text">Welcome to My World</h4>
-      <p class="grey-text text-lighten-3">Scroll down to explore</p>
+    
     </div>
 
  
   <!-- MAIN CONTENT -->
   <div class="main-content">
-    
     <div class="section container">
       <h3 class="white-text">Regular Section 1</h3>
-      <p class="grey-text text-lighten-2">This section scrolls normally, no parallax effects here.</p>
+      <p class="grey-text text-lighten-2">this is where i would put more content...IF I HAD ANY.</p>
     </div>
 
     <div class="section container">
