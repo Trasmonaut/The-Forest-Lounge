@@ -46,8 +46,8 @@ html, body {
   font-family:"Spicy Rice", sans-serif;
  font-size: 130px;
   color: #ffffff;
-  letter-spacing: -4px;
-  text-transform: uppercase;
+  letter-spacing: 5px;
+  ext-transform: uppercase;
   
 }
 
@@ -128,7 +128,7 @@ html, body {
 /* Overlay Text */
 .hero-overlay {
   position: absolute;
-  top: 50%; 
+  top: 55%; 
   left: 50%;
   transform: translate(-50%,-70%);
   z-index: 0;
