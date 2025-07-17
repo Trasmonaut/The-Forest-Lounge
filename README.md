@@ -31,3 +31,5 @@ window.addEventListener('scroll', () => {
   });
 });
 ```
+
+### Heres a Fun Idea, negate the Data speed values of the different layers (Example 0.55 to -0.55)
