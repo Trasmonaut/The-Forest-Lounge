@@ -44,10 +44,10 @@ html, body {
 
 .main-logo{
   font-family:"Spicy Rice", sans-serif;
- font-size: 130px;
+ font-size:60px;
   color: #ffffff;
   letter-spacing: 5px;
-  ext-transform: uppercase;
+  text-transform: uppercase;
   
 }
 
@@ -109,8 +109,8 @@ html, body {
 .hero-parallax-container {
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100%;
+  height: 80vh;
+  width: auto;
   overflow: hidden;
   z-index: 0;
   pointer-events: none;
@@ -128,32 +128,13 @@ html, body {
 /* Overlay Text */
 .hero-overlay {
   position: absolute;
-  top: 55%; 
+  top: 40%; 
   left: 50%;
+  width: auto ;
   transform: translate(-50%,-70%);
-  z-index: 0;
+
   pointer-events: auto;
 }
-
-/* Spacer to push content down */
-.hero-spacer {
-  position: absolute;
-  top: 100vh; /* Matches the height of the parallax container */
-  width: 100%;
-  left: 0;
-  height: 100vh;
-}
-
-.mobile-hero {
-  position: relative;
-  width: 100vw;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  z-index: 1;
-  pointer-events: none;
-}
-
 
 /* Main content */
 .main-content {
@@ -223,4 +204,47 @@ html, body {
   border-color: white;
   outline: none;
   transform: scale(1.05);
+}
+
+.medium-hero {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+.medium-hero img{
+  object-fit: cover;
+} 
+
+.medium-title{
+  font-family: "Spicy Rice", sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  width: fit-content;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.medium-hero-overlay {
+  height: auto;
+  padding: 20px;
+  
+}
+
+.medium-subtitle {
+  font-family: 'Outfit', sans-serif;
+
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }

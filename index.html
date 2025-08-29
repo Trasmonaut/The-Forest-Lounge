@@ -45,12 +45,12 @@
   </div>
 
   <!--Nav Section-->
-  <div  class="navbar-fixed ">
+  <div  class="navbar-fixed  hide-on-med-and-down ">
     <nav class="nav-center">
 
     <div class="nav-wrapper ">
       
-      <ul id="nav-mobile" class="center hide-on-small-only ">
+      <ul id="nav-mobile" class="center  ">
        <li class="nav-links"> About Us</li>
        <li class="nav-links">Contact</li>
        <li class="nav-links">Gallery</li>
@@ -66,7 +66,7 @@
   </div>
   <div>
   <!-- HERO SECTION with Parallax Effect for desktop view only -->
-    <div class="hero-parallax-container hide-on-small-only">
+    <div class="hero-parallax-container hide-on-med-and-down">
       <img src="images/Parallax/sky.png" class="hero-layer" data-speed="-z0.05">
       <img src="images/Parallax/7.png" class="hero-layer" data-speed="-0.1">
       <img src="images/Parallax/6.png" class="hero-layer" data-speed="-0.2">
@@ -77,7 +77,7 @@
       <img src="images/Parallax/1.png" class="hero-layer" data-speed="-0.7" style="height: -150px; z-index: 10;">
 
       <!-- Text-Overlay -->
-      <div class="hero-overlay center-align hide-on-small-only">
+      <div class="hero-overlay center-align hide-on-med-and-down">
         <h1 class="main-logo">The Forest Lounge</h1>
         <p class = "subtitle">Step into a living forest where every leaf whispers a story. Discover ancient secrets, forge bonds with magical creatures, and shape your path through a world designed for peace and wonder.</p>
         <div class="button-group">
@@ -89,15 +89,22 @@
   </div>
 
 
-  <!-- Mobile view -->
-   <div class="section no-pad-top center hide-on-med-and-up" style="margin: 0; padding: 0;">
-      <img src="images/Parallax/regular.png" class="mobile-hero responsive-img">
+  <!-- MEDIUM HERO view -->
+   <div class="section medium-hero center hide-on-large-only" style="margin: 0; padding: 0;">
+      <img src="images/Parallax/regular.png" class="medium-hero">
 
-      <h4 class="white-text">Welcome to My World</h4>
-    
+
     </div>
 
- 
+    <div class="medium-hero-overlay center-align hide-on-large-only">
+      <h1 class="medium-title">The Forest Lounge</h1>
+      <p class = "medium-subtitle">Step into a living forest where every leaf whispers a story. Discover ancient secrets, forge bonds with magical creatures, and shape your path through a world designed for peace and wonder.</p>
+      <div class="button-group">
+         <button class="button watch-trailer-button" id="watch-trailer-button"> Watch Trailer</button>
+         <button class ="button wishlist-button">Wishlist</button>
+        </div>
+    </div>
+
   <!-- MAIN CONTENT -->
   <div class="main-content">
     <div class="section container">
